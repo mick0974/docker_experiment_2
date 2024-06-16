@@ -1,0 +1,21 @@
+Specification,Message
+resources/tagged_andrea/uk_parliament.json,Success %: 100%
+resources/tagged_andrea/asana.json,Success %: 49%
+resources/tagged_andrea/soundcloud.json,Success %: 4%
+resources/tagged_andrea/notion.json,Success %: 48%
+resources/tagged/books_rest_api_openapi.json,Success %: 42%
+resources/tagged_andrea/openbanking.json,Success %: 0%
+resources/tagged_andrea/paylocity.json,Success %: 52%
+resources/tagged_andrea/openbanking_uk.json,Success %: 51%
+resources/tagged_andrea/wordnik.json,Success %: 87%
+resources/tagged/vampi.json,Success %: 56%
+resources/tagged_andrea/football_prediction.json,Success %: 100%
+resources/tagged_andrea/the_blue_alliance.json,Success %: 89%
+resources/tagged_andrea/fitbit.json,Success %: 64%
+resources/tagged/market_openapi.json,Success %: 42%
+resources/tagged_andrea/openai.json,Success %: 61%
+resources/tagged/simplequiz-api.json,Success %: 22%
+resources/tagged_andrea/authentiq.json,Success %: 32%
+resources/tagged_andrea/eBay_Finances_API.json,Success %: 85%
+resources/tagged_andrea/opendata.json,Success %: 0%
+resources/tagged_andrea/ynab.json,Success %: 55%

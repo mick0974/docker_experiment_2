@@ -1,0 +1,160 @@
+resources/tagged/CrAPI.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+NaN,0.696969696969697,NaN,0.11195700850873264,0.696969696969697
+
+resources/tagged_andrea/netlicensing.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,0.0,1.0
+
+resources/tagged_andrea/netatmo.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+NaN,0.6818181818181818,NaN,0.5568181818181818,0.6818181818181818
+
+resources/tagged_andrea/football_prediction.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,NaN,1.0
+
+resources/tagged/vampi.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,0.0,1.0
+
+resources/tagged_andrea/openai.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+0.9666666666666667,0.9259259259259259,0.9410768300060497,0.018518518518518517,0.9259259259259259
+
+resources/tagged_andrea/fitbit.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+0.9761815453863465,0.967741935483871,0.9692842893981413,0.03413537810682179,0.967741935483871
+
+resources/tagged_andrea/ynab.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,0.0,1.0
+
+resources/tagged_andrea/openbanking.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,NaN,1.0
+
+resources/tagged_andrea/tisane.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,NaN,1.0
+
+resources/tagged_andrea/noosh.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+0.9582572099699856,0.9587628865979382,0.9578143707919329,0.12012652296157449,0.9587628865979382
+
+resources/tagged_andrea/europeana.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+NaN,0.8888888888888888,NaN,0.8888888888888888,0.8888888888888888
+
+resources/tagged_andrea/paylocity.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+0.975,0.9666666666666667,0.9680672268907562,0.0037037037037037034,0.9666666666666667
+
+resources/tagged/books_rest_api_openapi.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,0.0,1.0
+
+resources/tagged/simplequiz-api.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+NaN,0.9090909090909091,NaN,0.051948051948051945,0.9090909090909091
+
+resources/tagged_andrea/AWS_S3_control.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+0.4711794053899317,0.42105263157894735,0.4395061728395062,0.27150477829004005,0.42105263157894735
+
+resources/tagged/favorite_product.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+NaN,NaN,NaN,NaN,NaN
+
+resources/tagged/dkron.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,0.0,1.0
+
+resources/tagged_andrea/soundcloud.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+NaN,NaN,NaN,NaN,NaN
+
+resources/tagged/lycet.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+NaN,NaN,NaN,NaN,NaN
+
+resources/tagged_andrea/paypi.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+NaN,NaN,NaN,NaN,NaN
+
+resources/tagged/celerio_openapi.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,0.0,1.0
+
+resources/tagged_andrea/eBay_Finances_API.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,0.7142857142857143,0.8333333333333333,NaN,0.7142857142857143
+
+resources/tagged/marvel-api.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,0.0,1.0
+
+resources/tagged_andrea/AWS_S3_outposts.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+0.7,0.4,0.4333333333333333,0.15,0.4
+
+resources/tagged_andrea/notion.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+0.9270833333333334,0.9166666666666666,0.9134920634920635,0.11666666666666668,0.9166666666666666
+
+resources/tagged/koel.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+NaN,0.8333333333333334,NaN,0.06845238095238095,0.8333333333333334
+
+resources/tagged_andrea/openbanking_uk.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,0.0,1.0
+
+resources/tagged/planeje.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,0.0,1.0
+
+resources/tagged_andrea/asana.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+0.6856062985759699,0.6518987341772152,0.6218728496889534,0.21939282401173052,0.6518987341772152
+
+resources/tagged_andrea/topups.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,0.0,1.0
+
+resources/tagged_andrea/authentiq.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+NaN,0.75,NaN,0.08333333333333333,0.75
+
+resources/tagged/market_openapi.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,0.0,1.0
+
+resources/tagged_andrea/opendata.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,0.8333333333333334,0.9090909090909091,NaN,0.8333333333333334
+
+resources/tagged_andrea/vonage.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,NaN,1.0
+
+resources/tagged_andrea/proxy_kingdom.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,NaN,1.0
+
+resources/tagged_andrea/paypal.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+0.6992704058367534,0.6046511627906976,0.5736812908446243,0.1778688060123699,0.6046511627906976
+
+resources/tagged_andrea/uk_parliament.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,NaN,1.0
+
+resources/tagged_andrea/the_blue_alliance.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,0.9538461538461539,0.9763779527559054,NaN,0.9538461538461539
+
+resources/tagged_andrea/wordnik.json
+Precision,Recall,F-Measure,False Positive Rate,True Positive Rate
+1.0,1.0,1.0,NaN,1.0
+

@@ -1,0 +1,1178 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Europeana Search & Record API",
+    "description": "This Swagger API console provides an overview of the Europeana Search & Record API. You can build and test anything from the simplest search to a complex query using facetList such as dates, geotags and permissions. For more help and information, head to our comprehensive <a href=\"https://pro.europeana.eu/page/intro\">online documentation</a>.",
+    "termsOfService": "https://www.europeana.eu/en/rights/api-terms-of-use",
+    "contact": {
+      "name": "https://pro.europeana.eu/page/intro#general"
+    },
+    "license": {
+      "name": "API terms of use",
+      "url": "https://www.europeana.eu/en/rights/api-terms-of-use"
+    },
+    "version": "version unknown",
+    "x-apisguru-categories": [
+      "open_data"
+    ],
+    "x-logo": {
+      "url": "https://api.apis.guru/v2/cache/logo/https_twitter.com_Europeanaeu_profile_image.png"
+    },
+    "x-origin": [
+      {
+        "format": "swagger",
+        "url": "http://www.europeana.eu/api/api-docs",
+        "version": "2.0"
+      }
+    ],
+    "x-providerName": "europeana.eu"
+  },
+  "servers": [
+    {
+      "url": "https://api.europeana.eu/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Record"
+    },
+    {
+      "name": "Search"
+    }
+  ],
+  "paths": {
+    "/record/v2/opensearch.rss": {
+      "get": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "basic search function following the OpenSearch specification ABCDEFG",
+        "operationId": "openSearch",
+        "x-crudOperationSemantics": "read",
+        "x-crudResourceType": "search",
+        "parameters": [
+          {
+            "name": "count",
+            "in": "query",
+            "description": "count",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 12
+            }
+          },
+          {
+            "name": "searchTerms",
+            "in": "query",
+            "description": "searchTerms",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "startIndex",
+            "in": "query",
+            "description": "startIndex",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              },
+              "application/rss+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              },
+              "application/xhtml+xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/record/v2/search.json": {
+      "get": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "search for records",
+        "operationId": "searchRecords",
+        "x-crudOperationSemantics": "read-multi",
+        "x-crudResourceType": "record",
+        "parameters": [
+          {
+            "name": "boost",
+            "in": "query",
+            "description": "boost",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "callback",
+            "in": "query",
+            "description": "callback",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "colourpalette",
+            "in": "query",
+            "description": "colourpalette",
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "description": "cursor",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "facet",
+            "in": "query",
+            "description": "facet",
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "hit.fl",
+            "in": "query",
+            "description": "hit.fl",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "hit.selectors",
+            "in": "query",
+            "description": "hit.selectors",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "landingpage",
+            "in": "query",
+            "description": "landingpage",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "lang",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "media",
+            "in": "query",
+            "description": "media",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "profile",
+            "in": "query",
+            "description": "profile",
+            "schema": {
+              "type": "string",
+              "default": "standard"
+            }
+          },
+          {
+            "name": "q.source",
+            "in": "query",
+            "description": "q.source",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "q.target",
+            "in": "query",
+            "description": "q.target",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "qf",
+            "in": "query",
+            "description": "qf",
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "query",
+            "in": "query",
+            "description": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "reusability",
+            "in": "query",
+            "description": "reusability",
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "rows",
+            "in": "query",
+            "description": "rows",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 12
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "description": "sort",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "description": "start",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "text_fulltext",
+            "in": "query",
+            "description": "text_fulltext",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "theme",
+            "in": "query",
+            "description": "theme",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "thumbnail",
+            "in": "query",
+            "description": "thumbnail",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "wskey",
+            "in": "query",
+            "description": "wskey",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          }
+        },
+        "deprecated": false
+      },
+      "post": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "search for records post",
+        "operationId": "searchRecordsPost",
+        "x-crudOperationSemantics": "update",
+        "x-crudResourceType": "record",
+        "parameters": [
+          {
+            "name": "wskey",
+            "in": "query",
+            "description": "wskey",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "searchRequest",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created",
+            "content": {}
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          }
+        },
+        "deprecated": false,
+        "x-codegen-request-body-name": "searchRequest"
+      }
+    },
+    "/record/v2/translateQuery.json": {
+      "get": {
+        "tags": [
+          "Search"
+        ],
+        "summary": "translate a term to different languages",
+        "operationId": "translateQueryUsingGET",
+        "x-crudOperationSemantics": "read",
+        "x-crudResourceType": "term",
+        "parameters": [
+          {
+            "name": "callback",
+            "in": "query",
+            "description": "callback",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "languageCodes",
+            "in": "query",
+            "description": "languageCodes",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "name": "profile",
+            "in": "query",
+            "description": "profile",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "term",
+            "in": "query",
+            "description": "term",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "wskey",
+            "in": "query",
+            "description": "wskey",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/record/v2/{collectionId}/{recordId}.json": {
+      "get": {
+        "tags": [
+          "Record"
+        ],
+        "summary": "get a single record in JSON format",
+        "operationId": "getSingleRecordJson",
+        "x-crudOperationSemantics": "read",
+        "x-crudResourceType": "record",
+        "parameters": [
+          {
+            "name": "callback",
+            "in": "query",
+            "description": "callback",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "collectionId",
+            "in": "path",
+            "description": "collectionId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "lang",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile",
+            "in": "query",
+            "description": "profile",
+            "schema": {
+              "type": "string",
+              "default": "standard"
+            }
+          },
+          {
+            "name": "recordId",
+            "in": "path",
+            "description": "recordId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "wskey",
+            "in": "query",
+            "description": "wskey",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json;charset=UTF-8": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/record/v2/{collectionId}/{recordId}.jsonld": {
+      "get": {
+        "tags": [
+          "Record"
+        ],
+        "summary": "get single record in JSON LD format",
+        "operationId": "getSingleRecordJsonLD",
+        "x-crudOperationSemantics": "read",
+        "x-crudResourceType": "record",
+        "parameters": [
+          {
+            "name": "callback",
+            "in": "query",
+            "description": "callback",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "collectionId",
+            "in": "path",
+            "description": "collectionId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "lang",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile",
+            "in": "query",
+            "description": "profile",
+            "schema": {
+              "type": "string",
+              "default": "standard"
+            }
+          },
+          {
+            "name": "recordId",
+            "in": "path",
+            "description": "recordId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "wskey",
+            "in": "query",
+            "description": "wskey",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json;charset=UTF-8": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              },
+              "application/ld+json;charset=UTF-8": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/record/v2/{collectionId}/{recordId}.rdf": {
+      "get": {
+        "tags": [
+          "Record"
+        ],
+        "summary": "get single record in RDF format)",
+        "operationId": "getSingleRecordRDF",
+        "x-crudOperationSemantics": "read",
+        "x-crudResourceType": "record",
+        "parameters": [
+          {
+            "name": "collectionId",
+            "in": "path",
+            "description": "collectionId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "lang",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile",
+            "in": "query",
+            "description": "profile",
+            "schema": {
+              "type": "string",
+              "default": "standard"
+            }
+          },
+          {
+            "name": "recordId",
+            "in": "path",
+            "description": "recordId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "wskey",
+            "in": "query",
+            "description": "wskey",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/rdf+xml;charset=UTF-8": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/record/v2/{collectionId}/{recordId}.schema.jsonld": {
+      "get": {
+        "tags": [
+          "Record"
+        ],
+        "summary": "get single record in Schema.org JSON LD format",
+        "operationId": "getSingleRecordSchemaOrg",
+        "x-crudOperationSemantics": "read",
+        "x-crudResourceType": "record",
+        "parameters": [
+          {
+            "name": "callback",
+            "in": "query",
+            "description": "callback",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "collectionId",
+            "in": "path",
+            "description": "collectionId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "lang",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile",
+            "in": "query",
+            "description": "profile",
+            "schema": {
+              "type": "string",
+              "default": "standard"
+            }
+          },
+          {
+            "name": "recordId",
+            "in": "path",
+            "description": "recordId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "wskey",
+            "in": "query",
+            "description": "wskey",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json;charset=UTF-8": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              },
+              "application/ld+json;charset=UTF-8": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/record/v2/{collectionId}/{recordId}.ttl": {
+      "get": {
+        "tags": [
+          "Record"
+        ],
+        "summary": "get single record in turtle format)",
+        "operationId": "getSingleRecordTurtle",
+        "x-crudOperationSemantics": "read",
+        "x-crudResourceType": "record",
+        "parameters": [
+          {
+            "name": "collectionId",
+            "in": "path",
+            "description": "collectionId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "lang",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile",
+            "in": "query",
+            "description": "profile",
+            "schema": {
+              "type": "string",
+              "default": "standard"
+            }
+          },
+          {
+            "name": "recordId",
+            "in": "path",
+            "description": "recordId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "wskey",
+            "in": "query",
+            "description": "wskey",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/x-turtle": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              },
+              "text/turtle": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              },
+              "application/turtle": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelAndView"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {}
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {}
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {}
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Hit": {
+        "title": "Hit",
+        "type": "object",
+        "properties": {
+          "fl": {
+            "type": "string"
+          },
+          "selectors": {
+            "type": "string"
+          }
+        }
+      },
+      "ModelAndView": {
+        "title": "ModelAndView",
+        "type": "object",
+        "properties": {
+          "empty": {
+            "type": "boolean"
+          },
+          "model": {
+            "type": "object",
+            "properties": {}
+          },
+          "modelMap": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          "reference": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "100",
+              "101",
+              "102",
+              "103",
+              "200",
+              "201",
+              "202",
+              "203",
+              "204",
+              "205",
+              "206",
+              "207",
+              "208",
+              "226",
+              "300",
+              "301",
+              "302",
+              "303",
+              "304",
+              "305",
+              "307",
+              "308",
+              "400",
+              "401",
+              "402",
+              "403",
+              "404",
+              "405",
+              "406",
+              "407",
+              "408",
+              "409",
+              "410",
+              "411",
+              "412",
+              "413",
+              "414",
+              "415",
+              "416",
+              "417",
+              "418",
+              "419",
+              "420",
+              "421",
+              "422",
+              "423",
+              "424",
+              "426",
+              "428",
+              "429",
+              "431",
+              "451",
+              "500",
+              "501",
+              "502",
+              "503",
+              "504",
+              "505",
+              "506",
+              "507",
+              "508",
+              "509",
+              "510",
+              "511"
+            ]
+          },
+          "view": {
+            "$ref": "#/components/schemas/View"
+          },
+          "viewName": {
+            "type": "string"
+          }
+        }
+      },
+      "SearchRequest": {
+        "title": "SearchRequest",
+        "required": [
+          "query"
+        ],
+        "type": "object",
+        "properties": {
+          "boost": {
+            "type": "string"
+          },
+          "callback": {
+            "type": "string"
+          },
+          "colourPalette": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cursor": {
+            "type": "string"
+          },
+          "facet": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "hit": {
+            "$ref": "#/components/schemas/Hit"
+          },
+          "landingPage": {
+            "type": "boolean"
+          },
+          "media": {
+            "type": "boolean"
+          },
+          "profile": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "qf": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "query": {
+            "type": "string"
+          },
+          "reusability": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rows": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sort": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "start": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "textFulltext": {
+            "type": "boolean"
+          },
+          "theme": {
+            "type": "string"
+          },
+          "thumbnail": {
+            "type": "boolean"
+          }
+        }
+      },
+      "View": {
+        "title": "View",
+        "type": "object",
+        "properties": {
+          "contentType": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

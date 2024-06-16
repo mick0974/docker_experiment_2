@@ -1,0 +1,932 @@
+resources/tagged/CrAPI.json
+Correctly Classified Instances          23               69.697  %
+Incorrectly Classified Instances        10               30.303  %
+Kappa statistic                          0.5865
+Mean absolute error                      0.0792
+Root mean squared error                  0.2575
+Relative absolute error                 44.3108 %
+Root relative squared error             79.3481 %
+Total Number of Instances               33     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.545    0.182    0.600      0.545    0.571      0.373    0.750     0.625     CREATE
+                 0.833    0.095    0.833      0.833    0.833      0.738    0.841     0.755     READ
+                 0.500    0.138    0.333      0.500    0.400      0.306    0.677     0.401     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 0.000    0.000    ?          0.000    ?          ?        0.250     0.030     SIGN_UP
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.697    0.112    ?          0.697    ?          ?        0.797     0.684     
+
+
+resources/tagged_andrea/netlicensing.json
+Correctly Classified Instances          38              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0085
+Root mean squared error                  0.0156
+Relative absolute error                  5.235  %
+Root relative squared error              5.244  %
+Total Number of Instances               38     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+resources/tagged_andrea/netatmo.json
+Correctly Classified Instances          15               68.1818 %
+Incorrectly Classified Instances         7               31.8182 %
+Kappa statistic                          0.1809
+Mean absolute error                      0.0834
+Root mean squared error                  0.2762
+Relative absolute error                 58.6708 %
+Root relative squared error            106.3199 %
+Total Number of Instances               22     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.500    0.000    1.000      0.500    0.667      0.690    0.750     0.545     CREATE
+                 1.000    0.875    0.667      1.000    0.800      0.289    0.563     0.667     READ
+                 0.000    0.000    ?          0.000    ?          ?        0.529     0.238     UPDATE
+                 0.000    0.000    ?          0.000    ?          ?        0.524     0.048     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.682    0.557    ?          0.682    ?          ?        0.570     0.530     
+
+
+resources/tagged_andrea/football_prediction.json
+Correctly Classified Instances           5              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0089
+Root mean squared error                  0.0151
+Relative absolute error                  8.6426 %
+Root relative squared error              8.8875 %
+Total Number of Instances                5     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.000    ?          ?        ?          ?        ?         ?         CREATE
+                 1.000    ?        1.000      1.000    1.000      ?        ?         1.000     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    ?        1.000      1.000    1.000      ?        ?         1.000     
+
+
+resources/tagged/vampi.json
+Correctly Classified Instances          10              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0078
+Root mean squared error                  0.0165
+Relative absolute error                  4.8287 %
+Root relative squared error              5.5765 %
+Total Number of Instances               10     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+resources/tagged_andrea/openai.json
+Correctly Classified Instances          25               92.5926 %
+Incorrectly Classified Instances         2                7.4074 %
+Kappa statistic                          0.8723
+Mean absolute error                      0.0192
+Root mean squared error                  0.1082
+Relative absolute error                 10.5478 %
+Root relative squared error             32.8069 %
+Total Number of Instances               27     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.933    0.000    1.000      0.933    0.966      0.928    0.944     0.970     CREATE
+                 1.000    0.056    0.900      1.000    0.947      0.922    0.948     0.856     READ
+                 ?        0.037    0.000      ?        ?          ?        ?         ?         UPDATE
+                 0.667    0.000    1.000      0.667    0.800      0.800    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.926    0.019    0.967      0.926    0.941      0.912    0.952     0.935     
+
+
+resources/tagged_andrea/fitbit.json
+Correctly Classified Instances          60               96.7742 %
+Incorrectly Classified Instances         2                3.2258 %
+Kappa statistic                          0.9327
+Mean absolute error                      0.0168
+Root mean squared error                  0.0908
+Relative absolute error                 11.942  %
+Root relative squared error             35.5377 %
+Total Number of Instances               62     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.857    0.000    1.000      0.857    0.923      0.907    0.859     0.889     CREATE
+                 1.000    0.050    0.977      1.000    0.988      0.963    0.950     0.977     READ
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     UPDATE
+                 1.000    0.016    0.500      1.000    0.667      0.701    0.992     0.500     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.968    0.034    0.976      0.968    0.969      0.949    0.934     0.951     
+
+
+resources/tagged_andrea/ynab.json
+Correctly Classified Instances          29              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0086
+Root mean squared error                  0.015 
+Relative absolute error                  6.7832 %
+Root relative squared error              6.618  %
+Total Number of Instances               29     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+resources/tagged_andrea/openbanking.json
+Correctly Classified Instances           7              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0069
+Root mean squared error                  0.0125
+Relative absolute error                  6.6897 %
+Root relative squared error              7.3403 %
+Total Number of Instances                7     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.000    ?          ?        ?          ?        ?         ?         CREATE
+                 1.000    ?        1.000      1.000    1.000      ?        ?         1.000     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    ?        1.000      1.000    1.000      ?        ?         1.000     
+
+
+resources/tagged_andrea/tisane.json
+Correctly Classified Instances           6              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.009 
+Root mean squared error                  0.0151
+Relative absolute error                  8.6497 %
+Root relative squared error              8.8948 %
+Total Number of Instances                6     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.000    ?          ?        ?          ?        ?         ?         CREATE
+                 1.000    ?        1.000      1.000    1.000      ?        ?         1.000     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    ?        1.000      1.000    1.000      ?        ?         1.000     
+
+
+resources/tagged_andrea/noosh.json
+Correctly Classified Instances          93               95.8763 %
+Incorrectly Classified Instances         4                4.1237 %
+Kappa statistic                          0.8779
+Mean absolute error                      0.0156
+Root mean squared error                  0.1008
+Relative absolute error                 12.0318 %
+Root relative squared error             43.893  %
+Total Number of Instances               97     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.889    0.000    1.000      0.889    0.941      0.937    0.944     0.900     CREATE
+                 0.987    0.150    0.962      0.987    0.974      0.871    0.918     0.961     READ
+                 0.778    0.011    0.875      0.778    0.824      0.808    0.875     0.702     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.959    0.120    0.958      0.959    0.958      0.874    0.918     0.932     
+
+
+resources/tagged_andrea/europeana.json
+Correctly Classified Instances           8               88.8889 %
+Incorrectly Classified Instances         1               11.1111 %
+Kappa statistic                          0     
+Mean absolute error                      0.0348
+Root mean squared error                  0.1628
+Relative absolute error                 30.3692 %
+Root relative squared error             81.5391 %
+Total Number of Instances                9     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.000    ?          ?        ?          ?        ?         ?         CREATE
+                 1.000    1.000    0.889      1.000    0.941      ?        0.500     0.889     READ
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.111     UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.889    0.889    ?          0.889    ?          ?        0.500     0.802     
+
+
+resources/tagged_andrea/paylocity.json
+Correctly Classified Instances          29               96.6667 %
+Incorrectly Classified Instances         1                3.3333 %
+Kappa statistic                          0.946 
+Mean absolute error                      0.0147
+Root mean squared error                  0.0922
+Relative absolute error                  9.6134 %
+Root relative squared error             32.8697 %
+Total Number of Instances               30     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.037    0.750      1.000    0.857      0.850    0.981     0.750     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 0.889    0.000    1.000      0.889    0.941      0.921    0.902     0.922     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.967    0.004    0.975      0.967    0.968      0.961    0.969     0.952     
+
+
+resources/tagged/books_rest_api_openapi.json
+Correctly Classified Instances          16              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0086
+Root mean squared error                  0.0183
+Relative absolute error                  4.7972 %
+Root relative squared error              5.6397 %
+Total Number of Instances               16     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+resources/tagged/simplequiz-api.json
+Correctly Classified Instances          10               90.9091 %
+Incorrectly Classified Instances         1                9.0909 %
+Kappa statistic                          0.8791
+Mean absolute error                      0.0295
+Root mean squared error                  0.1486
+Relative absolute error                 16.3273 %
+Root relative squared error             45.4737 %
+Total Number of Instances               11     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.143    0.800      1.000    0.889      0.828    0.929     0.800     READ
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 0.000    0.000    ?          0.000    ?          ?        0.700     0.167     SIGN_UP
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.909    0.052    ?          0.909    ?          ?        0.947     0.852     
+
+
+resources/tagged_andrea/AWS_S3_control.json
+Correctly Classified Instances          24               42.1053 %
+Incorrectly Classified Instances        33               57.8947 %
+Kappa statistic                          0.1546
+Mean absolute error                      0.1374
+Root mean squared error                  0.3581
+Relative absolute error                 85.4406 %
+Root relative squared error            121.3769 %
+Total Number of Instances               57     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.250    0.189    0.091      0.250    0.133      0.040    0.660     0.133     CREATE
+                 0.500    0.414    0.538      0.500    0.519      0.087    0.516     0.483     READ
+                 0.333    0.089    0.500      0.333    0.400      0.287    0.570     0.307     UPDATE
+                 0.385    0.159    0.417      0.385    0.400      0.232    0.564     0.301     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.421    0.272    0.471      0.421    0.440      0.159    0.548     0.380     
+
+
+resources/tagged/favorite_product.json
+Total Number of Instances                0     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        ?        ?          ?        ?          ?        ?         ?         CREATE
+                 ?        ?        ?          ?        ?          ?        ?         ?         READ
+                 ?        ?        ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        ?        ?          ?        ?          ?        ?         ?         DELETE
+                 ?        ?        ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        ?        ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        ?        ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        ?        ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    ?        ?        ?          ?        ?          ?        ?         ?         
+
+
+resources/tagged/dkron.json
+Correctly Classified Instances          10              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0092
+Root mean squared error                  0.0157
+Relative absolute error                  7.2131 %
+Root relative squared error              6.8468 %
+Total Number of Instances               10     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+resources/tagged_andrea/soundcloud.json
+Total Number of Instances                0     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        ?        ?          ?        ?          ?        ?         ?         CREATE
+                 ?        ?        ?          ?        ?          ?        ?         ?         READ
+                 ?        ?        ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        ?        ?          ?        ?          ?        ?         ?         DELETE
+                 ?        ?        ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        ?        ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        ?        ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        ?        ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    ?        ?        ?          ?        ?          ?        ?         ?         
+
+
+resources/tagged/lycet.json
+Total Number of Instances                0     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        ?        ?          ?        ?          ?        ?         ?         CREATE
+                 ?        ?        ?          ?        ?          ?        ?         ?         READ
+                 ?        ?        ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        ?        ?          ?        ?          ?        ?         ?         DELETE
+                 ?        ?        ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        ?        ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        ?        ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        ?        ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    ?        ?        ?          ?        ?          ?        ?         ?         
+
+
+resources/tagged_andrea/paypi.json
+Total Number of Instances                0     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        ?        ?          ?        ?          ?        ?         ?         CREATE
+                 ?        ?        ?          ?        ?          ?        ?         ?         READ
+                 ?        ?        ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        ?        ?          ?        ?          ?        ?         ?         DELETE
+                 ?        ?        ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        ?        ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        ?        ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        ?        ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    ?        ?        ?          ?        ?          ?        ?         ?         
+
+
+resources/tagged/celerio_openapi.json
+Correctly Classified Instances          16              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0086
+Root mean squared error                  0.0183
+Relative absolute error                  4.7972 %
+Root relative squared error              5.6397 %
+Total Number of Instances               16     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+resources/tagged_andrea/eBay_Finances_API.json
+Correctly Classified Instances           5               71.4286 %
+Incorrectly Classified Instances         2               28.5714 %
+Kappa statistic                          0     
+Mean absolute error                      0.0716
+Root mean squared error                  0.2453
+Relative absolute error                 69.006  %
+Root relative squared error            144.3892 %
+Total Number of Instances                7     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.000    ?          ?        ?          ?        ?         ?         CREATE
+                 0.714    ?        1.000      0.714    0.833      ?        ?         1.000     READ
+                 ?        0.286    0.000      ?        ?          ?        ?         ?         UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.714    ?        1.000      0.714    0.833      ?        ?         1.000     
+
+
+resources/tagged/marvel-api.json
+Correctly Classified Instances          13              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0087
+Root mean squared error                  0.0151
+Relative absolute error                  6.6946 %
+Root relative squared error              6.4595 %
+Total Number of Instances               13     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+resources/tagged_andrea/AWS_S3_outposts.json
+Correctly Classified Instances           2               40      %
+Incorrectly Classified Instances         3               60      %
+Kappa statistic                          0.1667
+Mean absolute error                      0.1518
+Root mean squared error                  0.3575
+Relative absolute error                100.2614 %
+Root relative squared error            128.9516 %
+Total Number of Instances                5     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.500    0.000      0.000    0.000      -0.408   0.125     0.200     CREATE
+                 0.333    0.000    1.000      0.333    0.500      0.408    0.667     0.733     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 1.000    0.250    0.500      1.000    0.667      0.612    0.875     0.500     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.400    0.150    0.700      0.400    0.433      0.286    0.600     0.580     
+
+
+resources/tagged_andrea/notion.json
+Correctly Classified Instances          11               91.6667 %
+Incorrectly Classified Instances         1                8.3333 %
+Kappa statistic                          0.84  
+Mean absolute error                      0.027 
+Root mean squared error                  0.1411
+Relative absolute error                 18.3682 %
+Root relative squared error             52.3867 %
+Total Number of Instances               12     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.000    ?          ?        ?          ?        ?         ?         CREATE
+                 1.000    0.200    0.875      1.000    0.933      0.837    0.900     0.875     READ
+                 0.750    0.000    1.000      0.750    0.857      0.816    0.891     0.841     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.917    0.117    0.927      0.917    0.913      0.844    0.905     0.874     
+
+
+resources/tagged/koel.json
+Correctly Classified Instances          20               83.3333 %
+Incorrectly Classified Instances         4               16.6667 %
+Kappa statistic                          0.7757
+Mean absolute error                      0.0467
+Root mean squared error                  0.1997
+Relative absolute error                 26.0608 %
+Root relative squared error             61.5038 %
+Total Number of Instances               24     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.750    0.000    1.000      0.750    0.857      0.845    0.938     0.821     CREATE
+                 1.000    0.188    0.727      1.000    0.842      0.769    0.906     0.727     READ
+                 0.714    0.000    1.000      0.714    0.833      0.799    0.924     0.839     UPDATE
+                 1.000    0.048    0.750      1.000    0.857      0.845    0.976     0.750     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     LOG_IN
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.042     LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.833    0.068    ?          0.833    ?          ?        0.912     0.761     
+
+
+resources/tagged_andrea/openbanking_uk.json
+Correctly Classified Instances          17              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0093
+Root mean squared error                  0.016 
+Relative absolute error                  7.0724 %
+Root relative squared error              6.6954 %
+Total Number of Instances               17     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+resources/tagged/planeje.json
+Correctly Classified Instances           5              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0068
+Root mean squared error                  0.0135
+Relative absolute error                  3.5551 %
+Root relative squared error              3.9531 %
+Total Number of Instances                5     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+resources/tagged_andrea/asana.json
+Correctly Classified Instances         103               65.1899 %
+Incorrectly Classified Instances        55               34.8101 %
+Kappa statistic                          0.4367
+Mean absolute error                      0.0898
+Root mean squared error                  0.2899
+Relative absolute error                 57.1391 %
+Root relative squared error             99.7598 %
+Total Number of Instances              158     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.824    0.106    0.483      0.824    0.609      0.574    0.835     0.596     CREATE
+                 0.846    0.350    0.702      0.846    0.767      0.505    0.656     0.673     READ
+                 0.440    0.111    0.647      0.440    0.524      0.372    0.702     0.515     UPDATE
+                 0.077    0.000    1.000      0.077    0.143      0.267    0.290     0.153     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.652    0.219    0.686      0.652    0.622      0.451    0.660     0.572     
+
+
+resources/tagged_andrea/topups.json
+Correctly Classified Instances           2              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0087
+Root mean squared error                  0.015 
+Relative absolute error                  5.4137 %
+Root relative squared error              5.1062 %
+Total Number of Instances                2     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+resources/tagged_andrea/authentiq.json
+Correctly Classified Instances           9               75      %
+Incorrectly Classified Instances         3               25      %
+Kappa statistic                          0.6636
+Mean absolute error                      0.0665
+Root mean squared error                  0.2446
+Relative absolute error                 36.1547 %
+Root relative squared error             73.8237 %
+Total Number of Instances               12     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.083    0.000      ?        ?          ?        ?         ?         CREATE
+                 1.000    0.250    0.667      1.000    0.800      0.707    0.875     0.667     READ
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     UPDATE
+                 0.333    0.000    1.000      0.333    0.500      0.522    0.852     0.619     DELETE
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.083     SIGN_UP
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.750    0.083    ?          0.750    ?          ?        0.880     0.717     
+
+
+resources/tagged/market_openapi.json
+Correctly Classified Instances          16              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0086
+Root mean squared error                  0.0183
+Relative absolute error                  4.7972 %
+Root relative squared error              5.6397 %
+Total Number of Instances               16     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     CREATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     READ
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     UPDATE
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+
+resources/tagged_andrea/opendata.json
+Correctly Classified Instances          10               83.3333 %
+Incorrectly Classified Instances         2               16.6667 %
+Kappa statistic                          0     
+Mean absolute error                      0.0346
+Root mean squared error                  0.1366
+Relative absolute error                 33.1571 %
+Root relative squared error             80.0091 %
+Total Number of Instances               12     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.000    ?          ?        ?          ?        ?         ?         CREATE
+                 0.833    ?        1.000      0.833    0.909      ?        ?         1.000     READ
+                 ?        0.167    0.000      ?        ?          ?        ?         ?         UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.833    ?        1.000      0.833    0.909      ?        ?         1.000     
+
+
+resources/tagged_andrea/vonage.json
+Correctly Classified Instances           2              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0089
+Root mean squared error                  0.015 
+Relative absolute error                  8.6214 %
+Root relative squared error              8.8657 %
+Total Number of Instances                2     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.000    ?          ?        ?          ?        ?         ?         CREATE
+                 1.000    ?        1.000      1.000    1.000      ?        ?         1.000     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    ?        1.000      1.000    1.000      ?        ?         1.000     
+
+
+resources/tagged_andrea/proxy_kingdom.json
+Correctly Classified Instances           1              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0089
+Root mean squared error                  0.015 
+Relative absolute error                  8.6144 %
+Root relative squared error              8.8585 %
+Total Number of Instances                1     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.000    ?          ?        ?          ?        ?         ?         CREATE
+                 1.000    ?        1.000      1.000    1.000      ?        ?         1.000     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    ?        1.000      1.000    1.000      ?        ?         1.000     
+
+
+resources/tagged_andrea/paypal.json
+Correctly Classified Instances          52               60.4651 %
+Incorrectly Classified Instances        34               39.5349 %
+Kappa statistic                          0.4346
+Mean absolute error                      0.1027
+Root mean squared error                  0.3038
+Relative absolute error                 59.2934 %
+Root relative squared error             95.4682 %
+Total Number of Instances               86     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.692    0.123    0.500      0.692    0.581      0.501    0.754     0.433     CREATE
+                 0.933    0.411    0.549      0.933    0.691      0.507    0.776     0.546     READ
+                 0.286    0.039    0.833      0.286    0.426      0.349    0.665     0.578     UPDATE
+                 0.625    0.000    1.000      0.625    0.769      0.776    0.820     0.668     DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.605    0.178    0.699      0.605    0.574      0.467    0.732     0.553     
+
+
+resources/tagged_andrea/uk_parliament.json
+Correctly Classified Instances           3              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0089
+Root mean squared error                  0.015 
+Relative absolute error                  8.6285 %
+Root relative squared error              8.8729 %
+Total Number of Instances                3     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.000    ?          ?        ?          ?        ?         ?         CREATE
+                 1.000    ?        1.000      1.000    1.000      ?        ?         1.000     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    ?        1.000      1.000    1.000      ?        ?         1.000     
+
+
+resources/tagged_andrea/the_blue_alliance.json
+Correctly Classified Instances          62               95.3846 %
+Incorrectly Classified Instances         3                4.6154 %
+Kappa statistic                          0     
+Mean absolute error                      0.0192
+Root mean squared error                  0.099 
+Relative absolute error                 17.3518 %
+Root relative squared error             54.6764 %
+Total Number of Instances               65     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.046    0.000      ?        ?          ?        ?         ?         CREATE
+                 0.954    ?        1.000      0.954    0.976      ?        ?         1.000     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    0.954    ?        1.000      0.954    0.976      ?        ?         1.000     
+
+
+resources/tagged_andrea/wordnik.json
+Correctly Classified Instances          14              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0091
+Root mean squared error                  0.0153
+Relative absolute error                  8.7076 %
+Root relative squared error              8.9543 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        0.000    ?          ?        ?          ?        ?         ?         CREATE
+                 1.000    ?        1.000      1.000    1.000      ?        ?         1.000     READ
+                 ?        0.000    ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         DELETE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        0.000    ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        0.000    ?          ?        ?          ?        ?         ?         OTHER
+Weighted Avg.    1.000    ?        1.000      1.000    1.000      ?        ?         1.000     
+
+

@@ -1,0 +1,19 @@
+
+Total Number of Instances                0     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 ?        ?        ?          ?        ?          ?        ?         ?         CREATE
+                 ?        ?        ?          ?        ?          ?        ?         ?         READ
+                 ?        ?        ?          ?        ?          ?        ?         ?         READ_MULTI
+                 ?        ?        ?          ?        ?          ?        ?         ?         UPDATE
+                 ?        ?        ?          ?        ?          ?        ?         ?         DELETE
+                 ?        ?        ?          ?        ?          ?        ?         ?         SIGN_UP
+                 ?        ?        ?          ?        ?          ?        ?         ?         LOG_IN
+                 ?        ?        ?          ?        ?          ?        ?         ?         LOG_OUT
+                 ?        ?        ?          ?        ?          ?        ?         ?         OTHER
+                 ?        ?        ?          ?        ?          ?        ?         ?         UNKNOWN
+Weighted Avg.    ?        ?        ?          ?        ?          ?        ?         ?         
+
+
