@@ -1,0 +1,604 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "description": "Simple Quiz",
+    "version": "1.0.0",
+    "title": "Simple Quiz",
+    "contact": {
+      "name": "Edmilson Torres",
+      "email": "edmilson.torres@gmail.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "API local test"
+    }
+  ],
+  "host": "localhost:3000",
+  "basePath": "/api",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "securityDefinitions": {
+    "JWT": {
+      "type": "apiKey",
+      "description": "JWT authorization of an API",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "paths": {
+    "/api/auth/register": {
+      "post": {
+        "summary": "User register",
+        "x-crudOperationSemantics": "signup",
+        "x-crudResourceType": "user",
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "User create with email and password",
+          "content": {
+            "application/json": {
+              "schema": {
+                "required": [
+                  "name",
+                  "email",
+                  "password"
+                ],
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "email of the user"
+                  },
+                  "email": {
+                    "type": "string",
+                    "description": "email of the user"
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "password of user"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      }
+    },
+    "/api/auth/login": {
+      "post": {
+        "summary": "User login",
+        "x-crudOperationSemantics": "login",
+        "x-crudResourceType": "user",
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "User login with email and password",
+          "content": {
+            "application/json": {
+              "schema": {
+                "required": [
+                  "email",
+                  "password"
+                ],
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "description": "email of the user"
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "password of user"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Ok"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      }
+    },
+    "/api/auth/requestresetpassword": {
+      "post": {
+        "summary": "User request reset password",
+        "x-crudOperationSemantics": "other",
+        "x-crudResourceType": "user",
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "Receive an email with a link to reset your password",
+          "content": {
+            "application/json": {
+              "schema": {
+                "required": [
+                  "email"
+                ],
+                "type": "object",
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "description": "email of the user"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Ok"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      }
+    },
+    "/api/auth/resetpassword": {
+      "post": {
+        "summary": "User reset password",
+        "x-crudOperationSemantics": "other",
+        "x-crudResourceType": "user",
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "Reset your password",
+          "content": {
+            "application/json": {
+              "schema": {
+                "required": [
+                  "userId",
+                  "password",
+                  "token"
+                ],
+                "type": "object",
+                "properties": {
+                  "userId": {
+                    "type": "string",
+                    "description": "Id of the user"
+                  },
+                  "password": {
+                    "type": "string",
+                    "description": "new password of the user"
+                  },
+                  "token": {
+                    "type": "string",
+                    "description": "token received by e-mail"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Ok"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      }
+    },
+    "/api/users": {
+      "get": {
+        "summary": "User list",
+        "x-crudOperationSemantics": "read-multi",
+        "x-crudResourceType": "user",
+        "tags": [
+          "User"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      }
+    },
+    "/api/users/{id}": {
+      "get": {
+        "summary": "User by id",
+        "x-crudOperationSemantics": "read",
+        "x-crudResourceType": "user",
+        "tags": [
+          "User"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "User Id",
+            "x-crudResourceIdentifier": true,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      },
+      "delete": {
+        "summary": "User delete",
+        "x-crudOperationSemantics": "delete",
+        "x-crudResourceType": "user",
+        "tags": [
+          "User"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "User Id",
+            "x-crudResourceIdentifier": true,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update user by id",
+        "x-crudOperationSemantics": "update",
+        "x-crudResourceType": "user",
+        "tags": [
+          "User"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "User Id",
+            "x-crudResourceIdentifier": true,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "User update",
+          "content": {
+            "application/json": {
+              "schema": {
+                "required": [
+                  "name"
+                ],
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "email of the user"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "User updated"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      }
+    },
+    "/api/quiz": {
+      "post": {
+        "summary": "Quiz create",
+        "x-crudOperationSemantics": "create",
+        "x-crudResourceType": "quiz",
+        "tags": [
+          "Quiz"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "Quiz create",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "$ref": "#/components/schemas/quiz"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      },
+      "get": {
+        "summary": "Quiz list",
+        "x-crudOperationSemantics": "read-multi",
+        "x-crudResourceType": "quiz",
+        "tags": [
+          "Quiz"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      }
+    },
+    "/api/quiz/{id}": {
+      "get": {
+        "summary": "Quiz by Id",
+        "x-crudOperationSemantics": "read",
+        "x-crudResourceType": "quiz",
+        "tags": [
+          "Quiz"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Quiz Id",
+            "x-crudResourceIdentifier": true,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Quiz delete",
+        "x-crudOperationSemantics": "delete",
+        "x-crudResourceType": "quiz",
+        "tags": [
+          "Quiz"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "User Id",
+            "x-crudResourceIdentifier": true,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update quiz by Id",
+        "x-crudOperationSemantics": "update",
+        "x-crudResourceType": "quiz",
+        "tags": [
+          "Quiz"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Quiz Id",
+            "x-crudResourceIdentifier": true,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "description": "Quiz update",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "$ref": "#/components/schemas/quiz"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "429": {
+            "description": "Too many request"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
+    "schemas": {
+      "user": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "createAt": {
+            "type": "date"
+          }
+        }
+      },
+      "quiz": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "createAt": {
+            "type": "string"
+          },
+          "questions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/question"
+            }
+          }
+        }
+      },
+      "question": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
